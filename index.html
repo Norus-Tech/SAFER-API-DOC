@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="bear-note-unique-identifier" content="0C90C93D-E0B5-47A8-B145-3861ED30CB40-28108-0000B26656C666C2">
         <meta name="created" content="2020-10-26T08:38:29-0500"/>
-        <meta name="modified" content="2020-10-27T09:00:14-0500"/>
+        <meta name="modified" content="2020-10-28T21:57:30-0500"/>
         <meta name="tags" content=""/>
         <meta name="last device" content="hevon’s MacBook Pro"/>
     </head>
@@ -53,7 +53,7 @@
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
 <span class="sf_code_comment">// this is an example base url - replace with the actual base endpoint</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_comment">// quarter can be either 1,2,3 or 4</span>
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/parish/par_3/murders/2012/quarter/1`</span>
@@ -78,7 +78,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 
 
 <span class="sf_code_comment">// this is an example base url - replace with the actual base endpoint</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_comment">// months are passed numerically (1-12)</span>
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/parish/par_1/murders/2012/month/8`</span>
@@ -103,9 +103,9 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
 <span class="sf_code_comment">// this is an example base url - replace with the actual base endpoint</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
-<span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/parish/westmoreland/murders/2012`</span>
+<span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/parish/par_11/murders/2012`</span>
 
 <span class="sf_code_keyword">await</span> axios<span class="sf_code_punctuation">.</span><span class="sf_code_keyword">get</span><span class="sf_code_punctuation">(</span><span class="sf_code_constant">URL</span><span class="sf_code_punctuation">,</span> <span class="sf_code_punctuation">{</span>
     headers<span class="sf_code_punctuation">:</span> <span class="sf_code_punctuation">{</span>
@@ -132,7 +132,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 
 
 <span class="sf_code_comment">// this is an example base url - replace with the actual base endpoint</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_comment">// '/parish/par_1/murder/range/2020/{10-12 | 10,11,12}'</span>
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/parish/par_1/murder/range/2020/4-9`</span>
@@ -162,7 +162,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
 <span class="sf_code_comment">// api-endpoint</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/range/community/comm_40/murder/2015,2017,2020`</span>
 
@@ -186,7 +186,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p><i>API Example:</i></p>
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/import/csv`</span>
 csvData <span class="sf_code_operator">=</span> <span class="sf_code_keyword">new</span> <span class="sf_code_class-name">FormData</span><span class="sf_code_punctuation">();</span>
@@ -219,7 +219,7 @@ csvData<span class="sf_code_punctuation">.</span><span class="sf_code_function">
     <span class="sf_code_string">"name"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"HEALTH_DIVISION"</span><span class="sf_code_punctuation">,</span>
     <span class="sf_code_string">"id"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"1"</span>
 <span class="sf_code_punctuation">}]</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/boundaries`</span>
 <span class="sf_code_keyword">await</span> axios<span class="sf_code_punctuation">.</span><span class="sf_code_function">post</span><span class="sf_code_punctuation">(</span>
@@ -245,7 +245,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/boundaries`</span>
 
@@ -271,7 +271,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
     <span class="sf_code_string">"name"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"SCHOOL"</span><span class="sf_code_punctuation">,</span>
     <span class="sf_code_string">"id"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"1"</span>
 <span class="sf_code_punctuation">}]</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/infrastructure`</span>
 <span class="sf_code_keyword">await</span> axios<span class="sf_code_punctuation">.</span><span class="sf_code_function">post</span><span class="sf_code_punctuation">(</span>
@@ -297,7 +297,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/infrastructure`</span>
 
@@ -322,7 +322,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
     <span class="sf_code_string">"name"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"DIABETES"</span><span class="sf_code_punctuation">,</span>
     <span class="sf_code_string">"id"</span><span class="sf_code_punctuation">:</span> <span class="sf_code_string">"1"</span>
 <span class="sf_code_punctuation">}]</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/incident`</span>
 <span class="sf_code_keyword">await</span> axios<span class="sf_code_punctuation">.</span><span class="sf_code_function">post</span><span class="sf_code_punctuation">(</span>
@@ -347,7 +347,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/incident`</span>
 
@@ -369,7 +369,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
 
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/boundary/health_division`</span>
 
@@ -383,7 +383,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p>This endpoint is used to fetch information that is used to power the google sheet that is used to upload incidents/Infrastructural updates to the system</p>
 <br>
 <p><i>API Template</i></p>
-<p><code class='code-inline'>/data_source/{data_source_type} </code></p>
+<p><code class='code-inline'>/data_source/{incidentType} </code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -391,8 +391,8 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <pre><code class='code-multiline' lang='javascript'><span class="sf_code_comment">//importing the requests library </span>
 <span class="sf_code_keyword">const</span> axios <span class="sf_code_operator">=</span> <span class="sf_code_function">require</span><span class="sf_code_punctuation">(</span><span class="sf_code_string">'axios'</span><span class="sf_code_punctuation">).</span><span class="sf_code_keyword">default</span><span class="sf_code_punctuation">;</span>
 <span class="sf_code_comment">// incidents, infrastructure</span>
-baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://fyaa0ugajk.execute-api.us-east-1.amazonaws.com/dev'</span>
-
+baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'https://bktwjavbah.execute-api.us-east-1.amazonaws.com/prod/'</span>
+<span class="sf_code_comment">//data_source_type: incidents, infrastructure</span>
 <span class="sf_code_constant">URL</span> <span class="sf_code_operator">=</span> <span class="sf_code_string">`</span><span class="sf_code_interpolation-punctuation">${</span><span class="sf_code_interpolation">baseUrl</span><span class="sf_code_interpolation-punctuation">}</span><span class="sf_code_string">/data_source/incidents`</span>
 
 <span class="sf_code_keyword">await</span> axios<span class="sf_code_punctuation">.</span><span class="sf_code_keyword">get</span><span class="sf_code_punctuation">(</span><span class="sf_code_constant">URL</span><span class="sf_code_punctuation">,</span> <span class="sf_code_punctuation">{</span>
