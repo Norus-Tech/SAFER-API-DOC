@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="bear-note-unique-identifier" content="0C90C93D-E0B5-47A8-B145-3861ED30CB40-28108-0000B26656C666C2">
         <meta name="created" content="2020-10-26T08:38:29-0500"/>
-        <meta name="modified" content="2020-11-01T20:13:33-0500"/>
+        <meta name="modified" content="2020-11-18T01:00:13-0500"/>
         <meta name="tags" content=""/>
         <meta name="last device" content="hevon’s MacBook Pro"/>
     </head>
@@ -17,11 +17,11 @@
 <br>
 <ul><li>boundaryType - A boundary type includes the following:
 <ul><li>	parish
-</li><li>	community
+</li><li>	pioj_community
+</li><li>	sdc_community
 </li><li>	health_division
 </li><li>	police_division
 </li><li>	political_constituency
-</li><li>	development_area
 </li></ul>
 </li></ul>
 <br>
@@ -39,11 +39,14 @@
 <br>
 <p>The Safer API has the following endpoints and can be accessed as is shown in the example associated with each API endpoint.</p>
 <br>
+<h1 id="Filters">Filters</h1>
+<p><mark>All Community level filter requires the</mark> <code class='code-inline'>parish</code> <mark>query string parameter in order to ensure that data is being queried for the correct community. The parish query string parameter is only required when filtering community level data</mark></p>
+<br>
 <h2 id="filterByQuarter">filterByQuarter</h2>
 <p>This endpoint may be used to filter Incidents that occur in <code class='code-inline'>divisions</code>, <code class='code-inline'>parishes</code> and <code class='code-inline'>communities</code> on a quarterly basis.</p>
 <br>
 <p> <i>API Template:</i> </p>
-<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}/quarter/{quarter}</code></p>
+<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}/quarter/{quarter}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -67,7 +70,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p>This endpoint may be used to filter Incidents that occur in <code class='code-inline'>divisions</code>, <code class='code-inline'>parishes</code> and <code class='code-inline'>communities</code> on a monthly basis.</p>
 <br>
 <p> <i>API Template:</i> </p>
-<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}/month/{month}</code></p>
+<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}/month/{month}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -91,7 +94,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p>This endpoint may be used to filter Incidents that occur in <code class='code-inline'>divisions</code>, <code class='code-inline'>parishes</code> and <code class='code-inline'>communities</code> on a yearly basis.</p>
 <br>
 <p> <i>API Template:</i> </p>
-<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}</code></p>
+<p><code class='code-inline'>/{boundaryType}/{boundaryId}/{incidentType}/{year}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -118,7 +121,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 </li></ul>
 <br>
 <p><i>API Template:</i> </p>
-<p><code class='code-inline'> /{boundaryType}/{boundaryId}/{incidentType}/range/{year}/{month_range_data}</code></p>
+<p><code class='code-inline'> /{boundaryType}/{boundaryId}/{incidentType}/range/{year}/{month_range_data}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -147,7 +150,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 </li></ul>
 <br>
 <p><i>API Template:</i> </p>
-<p><code class='code-inline'>/range/{boundary}/{boundaryId}/{incidentType}/{year_range_data}</code></p>
+<p><code class='code-inline'>/range/{boundary}/{boundaryId}/{incidentType}/{year_range_data}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -170,7 +173,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p>This endpoint is used to group incidents based on the common tags that they share. One could tag <code class='code-inline'>murders</code> and <code class='code-inline'>shootings</code> as <code class='code-inline'>violent-crimes</code> and then filter violent crimes that occur yearly in a <code class='code-inline'>boundaryType</code></p>
 <br>
 <p> <i>API Template:</i> </p>
-<p><code class='code-inline'> /tags/{boundary}/{boundaryId}/{tag}/{year}</code></p>
+<p><code class='code-inline'> /tags/{boundary}/{boundaryId}/{tag}/{year}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -193,7 +196,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
 <p>This endpoint is used to group incidents based on the common tags that they share. One could tag <code class='code-inline'>murders</code> and <code class='code-inline'>shootings</code> as <code class='code-inline'>violent-crimes</code> and then filter violent crimes that occur monthly in a <code class='code-inline'>boundaryType</code></p>
 <br>
 <p> <i>API Template:</i> </p>
-<p><code class='code-inline'>/tags/{boundary}/{boundaryId}/{tag}/{year}/month/{month}</code></p>
+<p><code class='code-inline'>/tags/{boundary}/{boundaryId}/{tag}/{year}/month/{month}?parish=&lt;parish&gt;</code></p>
 <br>
 <p><i>Method</i>: <code class='code-inline'>GET</code></p>
 <br>
@@ -211,7 +214,7 @@ baseUrl <span class="sf_code_operator">=</span> <span class="sf_code_string">'ht
     <span class="sf_code_punctuation">}</span>
 <span class="sf_code_punctuation">});</span></code></pre>
 <p><br></p>
-<h2 id="importRecord">  importRecord</h2>
+<h2 id="importRecord (DEPRECATED) see <code class='code-inline'>parseIncidents</code>">  importRecord (DEPRECATED) see <code class='code-inline'>parseIncidents</code></h2>
 <p>The importRecord endpoint is used to process the incident/infrastructure that are being passed into the system.</p>
 <br>
 <p><u>The API currently only accepts data in CSV format</u></p>
@@ -243,6 +246,8 @@ csvData<span class="sf_code_punctuation">.</span><span class="sf_code_function">
 <span class="sf_code_punctuation">);</span>
 </code></pre>
 <p><br></p>
+<h2 id="parseIncidents">parseIncidents</h2>
+<p>Incidents that are stored by the system are expected to be uploaded in the form of a CSV document to the safer-api s3 bucket. This will trigger an event that will cause the incidents in the CSV document to be processed and stored accordingly.</p>
 <br>
 <h2 id="saveBoundaryTypes">  saveBoundaryTypes</h2>
 <p>The API provides an endpoint for adding the relevant boundary types. This is only necessary in the setup stage of the API</p>
